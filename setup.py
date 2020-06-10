@@ -21,7 +21,7 @@ class GenerateParsetab(Command):
 
 
 setup(name="phply",
-      version="1.2.2",
+      version="1.2.5",
       packages=find_packages(),
       namespace_packages=['phply'],
       include_package_data=True,
@@ -54,6 +54,9 @@ setup(name="phply",
         },
 
       install_requires=[
+        'ply',
+        ],
+      setup_requires=[
         'ply',
         ],
 
